@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cow Records</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+	<h1>Cow Records</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Cow Name</th>
+				<th>Milk Production (litres)</th>
+				<th>Food Consumed (kg)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Bessie</td>
+				<td id="bessie-milk"><input type="number" id="bessie-milk"></td>
+				<td><input type="number" id="bessie-food" onchange="updateRecord('bessie')"></td>
+        <td>
+        <form>
+          <input type="submit" value="Save">
+        </form>
+      </td>
+			</tr>
+			<tr>
+				<td>Clarabelle</td>
+				<td id="Clarabelle-milk"><input type="number" id="Clarabelle-milk"></td>
+				<td><input type="number" id="clarabelle-food" onchange="updateRecord('clarabelle')"></td>
+        <td>
+        <form>
+          <input type="submit" value="Save">
+        </form>
+      </td>
+			</tr>
+			<!-- Add more cows as needed -->
+		</tbody>
+	</table>
+  <br>
+  
+
+	<script src="home.js"></script>
+</body>
+  <footer>
+
+    <a href="index.html" class="button">back</a>
+  </footer>
+</html>

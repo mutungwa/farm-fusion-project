@@ -1,0 +1,49 @@
+/* Set up a grid layout for your products */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Style each product */
+.product {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the product image */
+.product-image {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the product title */
+.product-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style the product description */
+.product-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Style the product price */
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Add a hover effect to each product */
+.product:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}

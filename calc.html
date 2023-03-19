@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agricultural Profit/Loss Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body>
+	<header>
+		<h1>Agricultural Profit/Loss Calculator</h1>
+	</header>
+	<main>
+		<form>
+			<label for="revenue">Total Revenue:</label>
+			<input type="number" name="revenue" id="revenue" step="0.01" min="0" required><br>
+
+			<label for="expenses">Total Expenses:</label>
+			<input type="number" name="expenses" id="expenses" step="0.01" min="0" required>
+
+			<button type="button" onclick="calculateProfitLoss()">Calculate</button>
+		</form>
+		<div id="result"></div>
+	</main>
+	<script src="calc.js"></script>
+</body>
+</html>

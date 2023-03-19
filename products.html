@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+  <script src="script.js">
+  </script>
+    <title>Shop  Here</title>
+    <link rel="stylesheet" type="text/css" href="products.css">
+  </head>
+  <body>
+    <h1></h1>
+    
+    <div class="product-grid" id="cart-items">
+      <ul>
+        <li class="product">
+          <h2>cabbage</h2>
+          <img src="https://images.unsplash.com/photo-1486328228599-85db4443971f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGZhcm0lMjBwcm9kdWN0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Product 1" class="product-image" width="200" height="150">
+          <p>Introducing our fresh and delicious cabbage - a versatile vegetable that is a staple in many cuisines around the world</p>
+          <p class="product-price">100 ksh only</p>
+          <button onclick="addItemToCart('cart-item', 10)">Add Item</button>
+          <button class="delete-item-btn">Delete</button>
+
+        </li>
+        <li class="product">
+          <h2>Tomato</h2>
+          <img src="https://media.istockphoto.com/id/855789576/photo/hands-holding-tomato-harvest-close-up.jpg?b=1&s=170667a&w=0&k=20&c=5t-n8ahJctCnJrRUHFF6VV8jKClbeqbOKmn4iJm2FsY=" alt="Product 2" class="product-image" width="200" height="150">
+          <p>Introducing our juicy and flavorful tomato - a classic fruit that has been a favorite of home cooks and professional chefs alike for generations</p>
+          <p class="product-price">150 ksh only</p>
+          <button onclick="addItemToCart('cart-item', 10)">Add Item</button>
+          <button class="delete-item-btn">Delete</button>
+
+
+          
+        </li>
+        <!-- Additional products can be added here -->
+         <li class="product">
+          <h2>Coffee</h2>
+           <img src="https://plus.unsplash.com/premium_photo-1675237625862-d982e7f44696?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29mZmVlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Product" 
+ class="product-image" width="200" height="150">
+           <p>Introducing our rich and aromatic coffee - a delicious beverage that has been enjoyed by coffee lovers around the world for centuries</p>
+          <p class="product-price">150 ksh only</p>
+        
+          <button onclick="addItemToCart('cart-item', 10)">Add Item</button>
+           <button class="delete-item-btn">Delete</button>
+
+
+         </li>
+        <li class="product">
+            <h2>Bananas</h2>
+            <img src="https://images.unsplash.com/photo-1594489428504-5c0c480a15fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmFuYW5hc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Product" 
+ class="product-image" width="200" height="150">
+          <p>ntroducing our sweet and nutritious bananas - a beloved fruit that is enjoyed by people of all ages around the world</p> 
+        <p class="product-price">150 ksh only</p>
+          <button onclick="addItemToCart('cart-item', 10)">Add Item</button>
+          <button class="delete-item-btn">Delete</button>
+
+
+        </li>
+        <li class="product">
+            <h2>Milk</h2>
+            <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1pbGt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Product" class="product-image" width="200" height="150">
+          <p>Introducing our fresh and nutritious milk - a staple beverage that has been enjoyed by people around the world for centuries</p> 
+        <p class="product-price">150 ksh only</p>
+          <button onclick="addItemToCart('cart-time', 150)">Add Item</button>
+          <button class="delete-item-btn">Delete</button>
+
+
+      </ul>
+    </div>
+  <div id="cart-icon">
+  <i class="fas fa-shopping-cart"></i>
+ <span id="cart-count">0</span>
+</div>
+  <div id="cart-summary">
+    <p>Total Price: <span id="total-price">$0.00</span></p>
+  </div>
+     
+
+    
+  
+  </body>
+</html>

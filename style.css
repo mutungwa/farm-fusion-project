@@ -1,0 +1,146 @@
+/* General styling */
+body {
+ background-image: url(https://cdn.midjourney.com/276291da-5489-490e-a06e-04e51dece9ae/grid_0.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Header */
+.header {
+  background-color: #090101;
+  color: white;
+  padding: 10px;
+  text-align: right;
+  
+  
+}
+
+.header a {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+}
+
+/* Home container */
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Home heading */
+.home-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #aaa;
+  width: 30%;
+  text-align: center;
+  margin: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: beige;
+footer {
+  text-align: center;
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+  .card {
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+  .button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+  .social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* center the list items horizontally */
+}
+
+.social-icons li {
+  display: inline-block; /* display the list items as inline-block elements */
+  margin: 0 10px; /* add margin between the icons */
+}
+
+.social-icons a {
+  display: inline-block;
+  text-decoration: none;
+  color: #4c3aa6;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #333;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #555;
+}
+
+.social-icons i {
+  vertical-align: middle;
+}

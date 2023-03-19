@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Crop Planning and Tracking</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="planning.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Crop Planning and Tracking</h1>
+    <form>
+      <div class="form-group">
+        <label for="crop-type">Crop Type</label>
+        <input type="text" class="form-control" id="crop-type" required>
+      </div>
+      <div class="form-group">
+        <label for="plant-date">Plant Date</label>
+        <input type="date" class="form-control" id="plant-date" required>
+      </div>
+      <div class="form-group">
+        <label for="harvest-date">Harvest Date</label>
+        <input type="date" class="form-control" id="harvest-date" required>
+      </div>
+      <div class="form-group">
+        <label for="quantity-planted">Quantity Planted</label>
+        <input type="number" class="form-control" id="quantity-planted" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Crop</button>
+    </form>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Crop Type</th>
+          <th>Plant Date</th>
+          <th>Harvest Date</th>
+          <th>Quantity Planted</th>
+          <th>Quantity Harvested</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody id="crop-table">
+      </tbody>
+    </table>
+  </div>
+  <script src="planning.js"></script>
+</body>
+</html>

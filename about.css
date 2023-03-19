@@ -1,0 +1,28 @@
+.about-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-text {
+  font-size: 20px;
+  line-height: 1.5;
+  animation: fadeIn 1s ease-in-out;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
