@@ -1,37 +1,61 @@
-body{
-  background-image: url(https://images.unsplash.com/photo-1484402628941-0bb40fc029e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2NlbmVyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: #f2f2f2;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-.button {
-  display: inline-block;
-  padding: 10px 10px;
-  font-size: 15px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  background-color: #4CAF50;
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+body {
+  background-color: #F7EED8;
+  background-image: url('images/forest\ farm.png');
+  background-repeat: repeat;
+  background-position: center top;
 }
 
-.button:hover {
-  background-color: #a099c2;
-  color: white;
-}
+/* Style for the link container */
 .link-container {
   display: flex;
-  justify-content: left;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
 }
 
+/* Style for the links in the link container */
 .link-container a {
-  display: inline-block;
-  margin: 0 10px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  background-color: #4CAF50;
+  text-decoration: none;
 }
 
+/* Style for the links on hover */
+.link-container a:hover {
+  background-color: #3e8e41;
+}
+
+/* Style for the footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Style for the back button in the footer */
+footer a {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  background-color: #4CAF50;
+  text-decoration: none;
+}
+
+/* Style for the back button on hover */
+footer a:hover {
+  background-color: #3e8e41;
+}

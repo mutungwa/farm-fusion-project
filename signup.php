@@ -2,9 +2,10 @@
 
 // Database connection
 $host = "localhost";
-$username = "root";
-$password = "";
-$dbname = "username";
+$host = getenv('MYSQL_HOST');
+$username = getenv('MYSQL_USER');
+$password = getenv('MYSQL_PASSWORD');
+$dbname = getenv('MYSQL_DATABASE');
 
 $conn = mysqli_connect($host, $username, $password, $dbname);
 if (!$conn) {
@@ -20,7 +21,7 @@ $password = $_POST['password'];
 $encrypted_password = password_hash($password, PASSWORD_DEFAULT);
 
 // Insert data into database
-$sql = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$encrypted_password')";
+$sql = "INSERT INTO users (username, email, password) VALUES ('$name', '$email', '$encrypted_password')";
 
 if (mysqli_query($conn, $sql)) {
   echo "User registered successfully!";
