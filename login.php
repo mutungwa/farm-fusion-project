@@ -1,15 +1,22 @@
 <?php
 
-// Database connection
-$host = getenv('MYSQL_HOST');
-$username = getenv('MYSQL_USER');
-$password = getenv('MYSQL_PASSWORD');
-$dbname = getenv('MYSQL_DATABASE');
+// MySQL database configuration
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "user";
 
-$conn = mysqli_connect($host, $username, $password, $dbname);
+// Create a connection to the database
+$conn = mysqli_connect($host, $username, $password, $database);
+
+// Check if the connection was successful
 if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
+    die("Connection failed: " . mysqli_connect_error());
 }
+
+// Connection was successful
+echo "Connected successfully to the database.";
+
 
 // Get form data
 $email = $_POST['email'];
